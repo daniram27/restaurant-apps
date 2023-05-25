@@ -85,6 +85,5 @@ module.exports = {
       ],
       overrideExtension: true,
     }),
-    new BundleAnalyzerPlugin(),
   ],
 };
