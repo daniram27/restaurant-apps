@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.skip-to-content {
+  position: absolute;
+  background-color: #DA291C;
+  text-decoration: none;
+  top: -5rem;
+  cursor: pointer;
+}
+
+.skip-to-content:focus {
+  display: block;
+  outline: none;
+  top: 1rem;
+}
+
+header {
+  min-height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 a {
+  color: #DA291C;
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar a {
+  padding: 30px;
+  text-decoration: none;
+  color: #DA291C;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #DDF7E3;
+}
+
+.menu {
+  display: none;
+  font-size: 32px;
+  padding: 20px;
+  background-color: #fff;
+  outline: none;
+  border: none;
+}
+
+.menu:focus {
+  border: 1px solid #333;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-size: cover;
+  position: relative;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.banner h2 {
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+  font-size: 60px;
+  font-weight: 800;
+  color: #DA291C;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+}
+
+section {
+  width: 100%;
+  min-height: 200px;
+}
+
+.restaurant {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #DDF7E3;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.restaurant-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.restaurant-container h3 {
+  text-align: center;
+}
+
+.card-content {
+  font-family: 'Poppins', sans-serif;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-container-favorite {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.restaurant-image { 
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.restaurant-image img { 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.restaurant-desc {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000;
+}
+
+.restaurant-head {
+  display: inline-block;
+  background-color: #DDF7E3;
+  color: black;
+}
+
+.city {
+  padding: 5px ;
+  top: 10px;
+  color: #333;
+  justify-content: center;
+}
+
+.card-link-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  border-radius: 5px;
+  color: #333;
+  font-weight: 600;
+}
+
+
+
+.card-rating {
+  margin-top: 10px;
+}
+
+.favorite {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #db0000;
+
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  border-radius: 50%;
+  border: 0;
+
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+footer {
+  padding: 30px;
+  color: gray;
+  background-color: beige;
+  font-weight: bold;
+}
+
+footer p {
+  padding-top: 20px;
+  text-align: center;
+}
+
+
