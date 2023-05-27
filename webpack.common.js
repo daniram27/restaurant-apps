@@ -72,6 +72,7 @@ module.exports = {
           quality: 50,
           progressive: true,
         }),
+        new BundleAnalyzerPlugin(),
       ],
     }),
     new ImageminWebpWebpackPlugin({

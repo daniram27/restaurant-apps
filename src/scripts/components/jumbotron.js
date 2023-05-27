@@ -6,13 +6,11 @@ class Jumbotron extends HTMLElement {
 
   render() {
     this.innerHTML = `
-    <picture>
-      <div class="banner">
-      <source media="(max-width: 600px)" srcset="/images/heros/banner.jpg">
-    <img src='/images/heros/banner.jpg' 
+    <picture class= "banner">
+      <source media="(max-width: 600px)" srcset="/images/heros/banner-small.jpg">
+    <img src='/images/heros/banner-large.jpg' 
          alt="banner">
     </picture>
-    </div>
     `;
   }
 }
